@@ -1,13 +1,35 @@
-## AutoValue-Improved
+# Auto
 
-I hijacked this from Google's open-source Java source code generators
-(found at https://github.com/google/auto). I'm mostly interested in the
-@AutoValue annotation, but I wanted to see how hard it would be to alter it to
-use the step-builder pattern
-(https://www.jayway.com/2012/02/07/builder-pattern-with-a-twist/) by default.
+A collection of source code generators for [Java][java].
 
-Assume that all the copyright behavior is supposed to be compliant with the
-Apache License. Any divergence is entirely due to incompetence.
+## Auto‽
+
+[Java][java] is full of code that is mechanical, repetitive, typically untested
+and sometimes the source of subtle bugs. _Sounds like a job for robots!_
+
+The Auto subprojects are a collection of code generators that automate those
+types of tasks. They create the code you would have written, but without
+the bugs.
+
+Save time.  Save code.  Save sanity.
+
+## Subprojects
+
+  * [AutoFactory] - JSR-330-compatible factories
+
+    Latest version: `0.1-beta3`
+
+  * [AutoService] - Provider-configuration files for [`ServiceLoader`]
+
+    Latest version: `1.0-rc2`
+
+  * [AutoValue] - Immutable [value-type] code generation for Java 1.6+.
+
+    Latest version: `1.2`
+
+  * [Common] - Helper utilities for writing annotation processors.
+
+    Latest version: `0.6`
 
 ## License
 
@@ -24,3 +46,12 @@ Apache License. Any divergence is entirely due to incompetence.
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
+
+[AutoFactory]: https://github.com/google/auto/tree/master/factory
+[AutoService]: https://github.com/google/auto/tree/master/service
+[AutoValue]: https://github.com/google/auto/tree/master/value
+[Common]: https://github.com/google/auto/tree/master/common
+
+[java]: https://en.wikipedia.org/wiki/Java_(programming_language)
+[value-type]: http://en.wikipedia.org/wiki/Value_object
+[`ServiceLoader`]: http://docs.oracle.com/javase/7/docs/api/java/util/ServiceLoader.html
