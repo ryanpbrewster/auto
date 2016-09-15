@@ -110,6 +110,7 @@ public class CompilationTest {
         "  }",
         "}"
     );
+    System.out.println("[RPB] actually running test");
     assertAbout(javaSource())
         .that(javaFileObject)
         .processedWith(new AutoValueProcessor())
